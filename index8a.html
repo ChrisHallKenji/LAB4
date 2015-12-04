@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> index8a </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+PImage clickhere;
+
+
+void setup() 
+
+{
+
+	size( 1000, 1000 );
+	background(0,0,0);
+	frameRate( 30 );
+	
+	clickhere = loadImage("Images/clickhere.png"); 
+	
+}						
+
+
+void draw() 
+
+{
+
+image(clickhere,825,350,90,30); 
+fill(255,0,0); 
+
+
+
+// objecties  
+	
+textSize(15)
+text ("You are a junior in American International School to help your friend from cyber bully",150,190); 
+text ("You have always be there for Jack, but sometimes it does not go well as you expect",150,210); 
+
+textSize(20) 
+text (" Objecties", 200,240); 
+text (" - Go find Jack", 200,270); 
+text (" - Find out what happened to Jack",200,300); 
+text (" - Find out who the bully is",200, 330); 
+
+
+// the box 
+
+rect(850,400,50,50); 
+if(mouseX >850 && mouseX < 950 && mouseY > 400 && mouseY < 500 && mousePressed == true && mouseButton == LEFT)
+		{
+
+				link("index8b.html")
+		}
+ 
+
+// line 
+
+stroke (255,0,0); 
+line (750,0,750,1000);
+
+
+
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+

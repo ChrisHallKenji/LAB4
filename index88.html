@@ -1,0 +1,64 @@
+<html>
+<head>
+<title> index 88 </title>
+<script src="Script/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+PImage clickhere;
+
+PImage Cat; 
+
+void setup() 
+
+
+{
+
+	size( 1000, 1000);
+	background(255,255,255);
+	frameRate( 30 ); 
+
+	conanback = loadImage("Images/conanback.png"); 
+	clickhere = loadImage("Images/clickhere.png"); 
+	
+
+}
+
+		
+void draw()
+
+// box
+
+{ 
+
+	image(conanback,0,0,730,750); 
+  
+ 		if(mouseX >850 && mouseX < 950 && mouseY > 400 && mouseY < 500 && mousePressed == true && mouseButton == LEFT)
+		{
+
+				link("index8a.html")
+		}
+
+	
+	rect(850,400,50,50); 
+
+// line 
+
+
+stroke (255,0,0); 
+line (750,0,750,1000);
+
+//click here 
+
+image(clickhere,825,350,90,30); 
+fill(255,0,0); 
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
